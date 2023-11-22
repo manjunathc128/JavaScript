@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+}
+body{
+  font-family: 'Press Start 2P', sans-serif;
+  background-color: #000;
+}
+
+.section-1 {
+  height: 35vh;
+  padding: 10px;
+  border-bottom: 4px solid #ddd;
+  /* background-color: hotpink; */
+  display: grid;
+  grid-template-areas:
+    "again between"
+    "heading heading"
+    "number number";
+  row-gap: 30px;
+  gap: 30px;
+  /* background-color: aqua; */
+  /* justify-content: center; */
+  justify-items: center;
+  /* align-items: center; */
+  /* overflow-x:auto ; */
+}
+.again{
+ 
+  box-sizing: border-box;
+  /* font-size: ; */
+  /* width: ; */
+  padding: 0.5em;
+  grid-area: again;
+  justify-self: left;
+  font-family: inherit;
+}
+
+.between{
+  text-align: center;
+  font-size: 0.6em;
+  /* background-color: #6f1; */
+  color: #fff;
+  grid-area: between;
+  justify-self: right;
+  padding: 1em 1em;
+}
+
+h1{
+  /* background-color: #6f1; */
+  color: #fff;
+  text-align: center;
+  /* width:200px; */
+  padding: 10px;
+  grid-area: heading;
+  font-size: 1em;
+  /* white-space: nowrap; */
+  /* word-break: break-all; */
+  /* overflow-x: scroll; */
+}
+.number{
+  background-color: #6fe;
+  grid-area:number ;
+  font-size: 3em;
+  padding: 20px 30px;
+}
+.btn{
+  cursor: pointer;
+  padding: 0.9em;
+  font-family: inherit;
+  background-color: #fff;
+  border:none
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
+
+main{
+  height: 65vh;
+  padding:10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 50% 50%; */
+  /* grid-template-columns: 50vw 50vw; */
+}
+
+.left{
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  align-items: center;
+  
+  row-gap: 45px ;
+  
+}
+
+.right{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.guess {
+  box-sizing: border-box;
+  /* background: none; */
+  border: 4px solid #eee;
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
+  /* padding: 2em 1em; */
+  width:40vw;
+  height: 10vh;
+  text-align: center;
+  
+}
+.check{
+width: 30vw;
+}
+
+.message{
+  font-size: 0.9em;
+  padding: 0.5em 1em;
+  color:#fff;
+  text-align: center;
+}
+
+.label-score{
+  font-size: 0.9em;
+  padding: 0.5em 1em;
+  color:#fff;
+  text-align: center;
+}
+.label-highscore{
+  font-size: 0.9em;
+  padding: 0.5em 1em;
+  color:#fff;
+  text-align: center;
+}
