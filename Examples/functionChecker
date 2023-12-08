@@ -1,0 +1,13 @@
+let testFunction= function (func){
+   if (func instanceof Function){
+       console.log('Argument is of function type')
+   } else console.log('Argument is not of function type')
+}
+
+let y = 'string'
+const x = function (){
+    console.log("hello")
+}
+
+testFunction(x) // Argument is of function type
+testFunction(y)  // Argument is not of function type
