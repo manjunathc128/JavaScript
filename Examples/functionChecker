@@ -1,7 +1,7 @@
 let testFunction= function (func){
    if (func instanceof Function){
-       console.log('Argument is of function type')
-   } else console.log('Argument is not of function type')
+       console.log(`Argument is of ${typeof func} type`)
+   } else console.log(`Argument is not of ${typeof func} type`)
 }
 
 let y = 'string'
