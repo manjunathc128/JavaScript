@@ -1,0 +1,14 @@
+// constructor : 
+
+const Person = function(name, age, country){
+      this.name = name;
+      this.age = age;
+      this.country = country;
+      this.method = () => {
+            return this.name 
+      }
+  }
+let person1 = new Person('person1',12,'India');
+let person2 = new Person('person2',13,'japan');
+console.log(person1.method())
+console.log(person2.method())
