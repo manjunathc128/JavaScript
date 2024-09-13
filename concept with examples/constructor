@@ -12,3 +12,36 @@ let person1 = new Person('person1',12,'India');
 let person2 = new Person('person2',13,'japan');
 console.log(person1.method())
 console.log(person2.method())
+
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+
+//program to print array of javascript object properties names 
+var student = {
+    name : "David Rayy",
+    sclass : "VI",
+    rollno : 12 
+    
+};
+function properties(obj){
+    if(isObject(obj)){
+        let res = [];
+        for(let prop in obj){
+            res.push(prop)
+            
+        }console.log(res)
+        if(Object.keys){
+            return Object.keys(obj)
+        }return []
+    }
+}
+function isObject(obj){
+    let type = typeof obj;
+    if (type === 'function' || type === 'object'){
+        return true
+    }return false
+}
+
+console.log(properties(student))
+
