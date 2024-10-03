@@ -1,0 +1,22 @@
+function palindrom(s){
+    palindromStr = ''
+    for(let char of s){
+        let pattern = /\w+/g;
+        if (pattern.test(char)){
+            palindromStr += char.toLowerCase()
+        }
+    }
+    i = 0
+    j = palindromStr.length - 1 - i
+    console.log(palindromStr)
+    while(i < j){
+        if(palindromStr[i] !== palindromStr[j] ){
+            return false
+        }
+        console.log(palindromStr[i],palindromStr[j])
+        i += 1
+        j -= 1
+    }
+    return true
+}
+console.log(palindrom(“c1 O$d@ehjjheD o1c”))
